@@ -36,106 +36,75 @@
       </div>
     </div>
   </nav>
-  <section id="profile">
-    <div class="section__pic-container">
-      <img src="./assets/profile-pic-ryan.png" alt="Ryan Park profile picture" />
+  <!-- Profile Section -->
+<section id="profile">
+  <div class="section__pic-container slide-element hidden" data-animation="slide-in-left">
+    <img src="./assets/profile-pic-ryan.png" alt="Ryan Park profile picture" />
+  </div>
+  <div class="section__text slide-element hidden" data-animation="slide-in-right">
+    <p class="section__text__p1">Howdy, I'm</p>
+    <h1 class="title">Ryan Park</h1>
+    <div class="section__text__p2 typewriter-container">
+      <span class="typewriter-text"></span>
     </div>
-    <div class="section__text">
-      <p class="section__text__p1">Howdy, I'm</p>
-      <h1 class="title">Ryan Park</h1>
-      <div class="section__text__p2 typewriter-container">
-        <span class="typewriter-text"></span>
-      </div>
-      <div class="btn-container">
-        <button
-          class="btn btn-color-2"
-          onclick="window.open('assets/Resume__Ryan_Park.pdf')"
-        >
-          Download CV
-        </button>
-        <button class="btn btn-color-1" onclick="location.href='./#contact'">
-          Contact Info
-        </button>
-      </div>
-      <div id="socials-container">
-        <img
-          src="./assets/linkedin.png"
-          alt="My LinkedIn profile"
-          class="icon"
-          onclick="location.href='https://www.linkedin.com/in/ryan-park-ab093324a/'""
-        />
-        <img
-          src="./assets/github.png"
-          alt="My Github profile"
-          class="icon"
-          onclick="location.href='https://github.com/ryanpark2004/'"
-        />
-        <img
-          src="./assets/insta.png"
-          alt="My Instagram profile"
-          class="icon"
-          onclick="location.href='https://www.instagram.com/'"
-        />
-      </div>
+    <div class="btn-container">
+      <button class="btn btn-color-2" onclick="window.open('assets/Resume__Ryan_Park.pdf')">
+        Download CV
+      </button>
+      <button class="btn btn-color-1" onclick="location.href='./#contact'">
+        Contact Info
+      </button>
     </div>
-  </section>
-  <section id="about">
-    <p class="section__text__p1">Get To Know More</p>
-    <h1 class="title">About Me</h1>
-    <div class="section-container">
-      <div class="section__pic-container">
-        <img
-          src="./assets/about-pic.jpeg"
-          alt="Profile picture"
-          class="about-pic"
-        />
-      </div>
-      <div class="about-details-container">
-        <div class="about-containers">
-          <div class="details-container">
-            <img
-              src="./assets/experience.png"
-              alt="Experience icon"
-              class="icon"
-            />
-            <h3>Experience</h3>
-            <p>2+ years <br />Software Development</p>
-          </div>
-          <div class="details-container">
-            <img
-              src="./assets/education.png"
-              alt="Education icon"
-              class="icon"
-            />
-            <h3>Education</h3>
-            <p>B.A. in Computer Science<br />Cornell Unviersity</p>
-          </div>
+    <div id="socials-container">
+      <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon" onclick="location.href='https://www.linkedin.com/in/ryan-park-ab093324a/'" />
+      <img src="./assets/github.png" alt="My Github profile" class="icon" onclick="location.href='https://github.com/ryanpark2004/'" />
+      <img src="./assets/insta.png" alt="My Instagram profile" class="icon" onclick="location.href='https://www.instagram.com/'" />
+    </div>
+  </div>
+</section>
+
+<!-- About Section -->
+<section id="about">
+  <p class="section__text__p1">Get To Know More</p>
+  <h1 class="title">About Me</h1>
+  <div class="section-container">
+    <div class="section__pic-container slide-element hidden" data-animation="slide-in-left">
+      <img src="./assets/about-pic.jpeg" alt="Profile picture" class="about-pic" />
+    </div>
+    <div class="about-details-container slide-element hidden" data-animation="slide-in-right">
+      <div class="about-containers">
+        <div class="details-container">
+          <img src="./assets/experience.png" alt="Experience icon" class="icon" />
+          <h3>Experience</h3>
+          <p>2+ years <br />Software Development</p>
         </div>
-        <div class="text-container">
-          <p>
-            Hello! I am currently studying Computer Science in the College of Arts and 
-            Sciences at Cornell University, planning to graduate in 2025.
-            I began my computer science journey in Fall 2022, where I took my 
-            first computer science course: CS 1110 with Walker White. This Python 
-            course sparked my passion for computer science, as I learned the 
-            challenges and the beauty of the software engineering world. 
-            <p>----------------------------------------------------------------</p>
-            <p>Through my projects and leadership experience in various organizations, I have developed 
-              a unique, versatile skillset. My drive to learn has led me to gain 
-              experience with data cleaning tools, such as Pandas, and 
-              ML libraries, such as PyTorch and Scikit-Learn. My main passions lie in data science and 
-              biotechnology, and I hope to gain as much experience as possible!</p>
-          </p>
+        <div class="details-container">
+          <img src="./assets/cornell.jpeg" alt="Education icon" class="icon" />
+          <h3>Education</h3>
+          <p>B.A. in Computer Science<br />Cornell Unviersity</p>
         </div>
       </div>
+      <div class="text-container">
+        <p>
+          Hello! I am currently studying Computer Science in the College of Arts and 
+          Sciences at Cornell University, planning to graduate in 2025.
+          I began my computer science journey in Fall 2022, where I took my 
+          first computer science course: CS 1110 with Walker White. This Python 
+          course sparked my passion for computer science, as I learned the 
+          challenges and the beauty of the software engineering world. 
+        </p>
+        <p>----------------------------------------------------------------</p>
+        <p>Through my projects and leadership experience in various organizations, I have developed 
+          a unique, versatile skillset. My drive to learn has led me to gain 
+          experience with data cleaning tools, such as Pandas, and 
+          ML libraries, such as PyTorch and Scikit-Learn. My main passions lie in data science and 
+          biotechnology, and I hope to gain as much experience as possible!
+        </p>
+      </div>
     </div>
-    <img
-      src="./assets/arrow.png"
-      alt="Arrow icon"
-      class="icon arrow"
-      onclick="location.href='./#experience'"
-    />
-  </section>
+  </div>
+  <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'" />
+</section>
   <section id="experience">
     <p class="section__text__p1">Explore My</p>
     <h1 class="title">Experience</h1>
@@ -143,7 +112,7 @@
       <div class="about-containers">
         <div class="details-container">
           <h2 class="experience-sub-title">Professional Skillset</h2>
-          <div class="article-container">
+          <div class="article-container slide-element hidden" data-animation="slide-in-left" >
             <article>
               <img
                 src="./assets/python.webp"
@@ -236,7 +205,7 @@
         </div>
         <div class="details-container">
           <h2 class="experience-sub-title">Tools I Use</h2>
-          <div class="article-container">
+          <div class="article-container slide-element hidden" data-animation="slide-in-right">
             <article>
               <img
                 src="./assets/vs.jpeg"

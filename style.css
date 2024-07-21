@@ -340,7 +340,6 @@ section {
   margin: auto 
   0;
 }
-
 /* EXPERIENCE SECTION */
 
 #experience {
@@ -473,4 +472,41 @@ footer {
 
 footer p {
   text-align: center;
+}
+
+/* EXTRA */ 
+
+
+@keyframes slideInLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInRight {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.slide-in-left {
+  animation: slideInLeft 1.0s forwards;
+}
+
+.slide-in-right {
+  animation: slideInRight 1.0s forwards;
+}
+
+.hidden {
+  opacity: 0;
 }

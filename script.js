@@ -5,6 +5,8 @@ function toggleMenu() {
   icon.classList.toggle("open");
 }
 
+/* Profile Typing Animation */ 
+
 document.addEventListener("DOMContentLoaded", function () {
   const textElement = document.querySelector(".typewriter-text");
   const texts = ["CS @ Cornell University", "Software Engineer", "Music Explorer", "Cooking Enthusiast"];
@@ -30,4 +32,44 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   typeWriter(texts[textIndex], 0);
+});
+
+/* Sliding Transition */ 
+
+// Add to script.js
+
+document.addEventListener('DOMContentLoaded', function () {
+  const elements = document.querySelectorAll('.slide-element');
+
+  const elementInView = (el, offset = 0) => {
+    const elementTop = el.getBoundingClientRect().top;
+    return (
+      elementTop <=
+      ((window.innerHeight || document.documentElement.clientHeight) - offset)
+    );
+  };
+
+  const displayScrollElement = (element) => {
+    element.classList.add(element.dataset.animation);
+  };
+
+  const hideScrollElement = (element) => {
+    element.classList.remove(element.dataset.animation);
+  };
+
+  const handleScrollAnimation = () => {
+    elements.forEach((el) => {
+      if (elementInView(el, 50)) {
+        displayScrollElement(el);
+      } else {
+        hideScrollElement(el);
+      }
+    });
+  };
+
+  window.addEventListener('scroll', () => {
+    handleScrollAnimation();
+  });
+
+  handleScrollAnimation();
 });
