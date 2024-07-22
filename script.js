@@ -73,3 +73,23 @@ document.addEventListener('DOMContentLoaded', function () {
 
   handleScrollAnimation();
 });
+
+/* Load Animation */ 
+
+// script.js
+
+window.addEventListener('load', function() {
+  const minimumLoadingTime = 2000;
+  const startTime = new Date().getTime();
+  function showContent() {
+    document.getElementById('loader').style.display = 'none';
+    document.getElementById('content').style.display = 'block';
+  }
+  const elapsedTime = new Date().getTime() - startTime;
+  if (elapsedTime < minimumLoadingTime) {
+    setTimeout(showContent, minimumLoadingTime - elapsedTime);
+  } else {
+    showContent();
+  }
+});
+
